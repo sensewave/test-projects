@@ -1,0 +1,33 @@
+module.exports= {
+
+tagsend: function (req, res) {
+
+console.log(req.param('auid'));
+var1= req.param('gatewayId');
+var2=req.param('auid');
+var3= req.param('state');
+console.log(var1);
+console.log(var2);
+console.log(var3);
+
+var request = require('request');
+var urls = "localhost:1337/register" + '?'+ 'auid';
+var urll = 'localhost:1337/tags'
+var a = '{"auid":"$a","gatewayId":"$g"}'
+var x = a.replace('$a',var2);
+var Data= a.replace('$b',var3);
+console.log(Data);
+
+
+
+
+}
+,
+ _config: {
+    actions: true,
+    shortcuts: false,
+    rest: false
+  }
+
+
+};

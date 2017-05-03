@@ -1,0 +1,113 @@
+{
+  "data": {
+    "gateway": [],
+    "register": [],
+    "tagdata": [
+      {
+        "auid": "demo1",
+        "gatewayId": "demo3",
+        "state": "1",
+        "createdAt": "2017-05-03T04:47:12.132Z",
+        "updatedAt": "2017-05-03T04:47:12.132Z",
+        "id": 11
+      },
+      {
+        "auid": "demo1",
+        "gatewayId": "demo3",
+        "state": "1",
+        "createdAt": "2017-05-03T04:47:17.709Z",
+        "updatedAt": "2017-05-03T04:47:17.709Z",
+        "id": 12
+      },
+      {
+        "auid": "demo1",
+        "gatewayId": "demo3",
+        "state": "1",
+        "createdAt": "2017-05-03T04:47:44.618Z",
+        "updatedAt": "2017-05-03T04:47:44.618Z",
+        "id": 13
+      },
+      {
+        "auid": "demo2",
+        "gatewayId": "demo3",
+        "state": "1",
+        "createdAt": "2017-05-03T04:49:34.827Z",
+        "updatedAt": "2017-05-03T04:49:34.827Z",
+        "id": 14
+      }
+    ],
+    "tags": []
+  },
+  "schema": {
+    "gateway": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "register": {
+      "auid": {
+        "type": "string",
+        "unique": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "tagdata": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "tags": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "gateway": {},
+    "register": {
+      "id": 1
+    },
+    "tags": {},
+    "tagdata": {
+      "id": 14
+    }
+  }
+}
